@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-color: #ae0b0b;
+    --alt-color: #db7b1a;
+    --transition: 0.7s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background-color: #000;
+}
+
+.landing {
+    background-image: url(section_img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+.landing .header .brand {
+    font-family: 'Dancing Script', cursive;
+    color: #EEE;
+    font-size: 50px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.landing .header .brand:hover {
+    color: #555;
+}
+
+.landing .header .navigation {
+    margin-left: -80px;
+}
+
+.landing .header .navigation a {
+    padding-left: 30px;
+    color: #EEE;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 300;
+    transition: var(--transition);
+}
+
+.landing .header .navigation a:hover {
+    color: #555;
+}
+
+.landing .header .social a {
+    color: #EEE;
+    padding-left: 30px;
+    font-size: 20px;
+    transition: var(--transition);
+}
+
+.landing .header .social a:hover {
+    color: #555;
+}
+
+.landing .content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 100px 40px;
+}
+
+.landing .content h1,h2 {
+    color: #EEE;
+    font-size: 4em;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.landing .content .hl {
+    color: var(--main-color);
+    font-size: 1.2em;
+}
+
+.landing .content p {
+    color: #EEE;
+    margin-top: 20px;
+}
+
+.landing .content .btn {
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: #EEE;
+    transition: var(--transition);
+    width: 60%;
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+
+.landing .content .btn:hover {
+    background-color: var(--alt-color);
+}
